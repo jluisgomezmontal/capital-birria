@@ -26,9 +26,9 @@ export const Restaurant = () => {
       </Box>
       <CardMedia
         component="img"
-        sx={{ width: 180, objectFit: "contain" }}
+        sx={{ width: 200, height: "100%", objectFit: "cover" }}
         image={logo}
-        alt="Live from space album cover"
+        alt="Capital"
       />
     </Card>
   );

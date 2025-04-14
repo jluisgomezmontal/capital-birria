@@ -7,6 +7,10 @@ import CardActionArea from "@mui/material/CardActionArea";
 import { Box } from "@mui/material";
 
 import tacos from "../assets/imagenes/quesabirria.webp";
+import volvanes from "../assets/imagenes/volcanes.webp";
+import birria from "../assets/imagenes/birria.webp";
+import ramen from "../assets/imagenes/ramen2.webp";
+import refrescos from "../assets/imagenes/refrescos.webp";
 
 const menu = [
   {
@@ -20,7 +24,7 @@ const menu = [
   },
   {
     nombre: "VOLVANES DE BIRRIA",
-    img: tacos,
+    img: volvanes,
     descripcion: "FRIJOLES, CARNE Y QUESO GRATINADO",
     menu: [
       { nombre: "ORDEN DE 3", precio: "149" },
@@ -29,21 +33,21 @@ const menu = [
   },
   {
     nombre: "PLATILLO 1/4",
-    img: tacos,
+    img: birria,
     precio: "145",
     descripcion: "TORTILLAS DE MANO Y GUARNICIONES",
     menu: false,
   },
   {
     nombre: "TAZON",
-    img: tacos,
+    img: ramen,
     precio: "145",
     descripcion: "CARNE Y CALDO",
     menu: false,
   },
   {
     nombre: "BIRRIA",
-    img: tacos,
+    img: birria,
     menu: [
       { nombre: "1 KG", precio: "650" },
       { nombre: "1 KG PARA LLEVAR", precio: "550" },
@@ -53,7 +57,7 @@ const menu = [
   },
   {
     nombre: "BEBIDAS",
-    img: tacos,
+    img: refrescos,
     menu: [
       { nombre: "CAFE NEGRO", precio: "25" },
       { nombre: "REFRESCOS", precio: "30" },
