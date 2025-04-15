@@ -13,9 +13,9 @@ function App() {
         <Typography
           variant="h3"
           gutterBottom
-          sx={{ mt: 2, fontFamily: "Dancing Script, cursive" }}
+          sx={{ my: 5, fontFamily: "Dancing Script, cursive" }}
         >
-          Menu
+          Menú
         </Typography>
       </Box>
       <Menu />
