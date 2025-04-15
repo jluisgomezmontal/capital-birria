@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 import { Carousel } from "./components/Carousel";
 import { Restaurant } from "./components/Restaurant";
 import { Menu } from "./components/Menu";
@@ -28,6 +28,30 @@ function App() {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
+      <Box
+        textAlign="center"
+        mt={4}
+        sx={{
+          fontSize: "14px",
+          color: "gray.300",
+          marginBottom: 3,
+        }}
+      >
+        &copy; Todos los derechos reservados. <br />
+        Diseño:{" "}
+        <Link
+          href="https://paginaswebacapulco.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          underline="hover"
+          sx={{
+            color: "primary.light",
+            fontWeight: "bold",
+          }}
+        >
+          Aplicaciones WEB Acapulco
+        </Link>
+      </Box>
     </>
   );
 }

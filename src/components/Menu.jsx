@@ -6,70 +6,107 @@ import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import { Box } from "@mui/material";
 
-import tacos from "../assets/imagenes/quesabirria.webp";
+import tacos from "../assets/imagenes/tacos.webp";
+import quesabirria from "../assets/imagenes/quesabirria.webp";
 import volvanes from "../assets/imagenes/volcanes.webp";
 import birria from "../assets/imagenes/birria.webp";
 import ramen from "../assets/imagenes/ramen2.webp";
+import pizza from "../assets/imagenes/pizza.webp";
+import tazon from "../assets/imagenes/tazon.webp";
 import refrescos from "../assets/imagenes/refrescos.webp";
 
 const menu = [
   {
     nombre: "TACOS DE BIRRIA",
     img: tacos,
-    descripcion: "TORTILLA DE MANO",
+    descripcion:
+      "Tacos servidos en tortilla hecha a mano, rellenos de deliciosa birria de res.",
     menu: [
-      { nombre: "ORDEN DE 3", precio: "75" },
-      { nombre: "PIEZA EXTRA", precio: "25" },
+      { nombre: "Orden de 3", precio: "75" },
+      { nombre: "Pieza extra", precio: "25" },
     ],
   },
   {
-    nombre: "VOLVANES DE BIRRIA",
-    img: volvanes,
-    descripcion: "FRIJOLES, CARNE Y QUESO GRATINADO",
+    nombre: "QUESABIRRIAS",
+    img: quesabirria,
+    descripcion:
+      "Crujientes tortillas de mano con queso derretido y jugosa birria de res.",
     menu: [
-      { nombre: "ORDEN DE 3", precio: "149" },
-      { nombre: "PIEZA EXTRA", precio: "50" },
+      { nombre: "Orden de 3", precio: "75" },
+      { nombre: "Pieza extra", precio: "25" },
+    ],
+  },
+  {
+    nombre: "VOLCANES DE BIRRIA",
+    img: volvanes,
+    descripcion: "Base crujiente con birria y queso gratinado al estilo único.",
+    menu: [
+      { nombre: "Orden de 3", precio: "149" },
+      { nombre: "Pieza extra", precio: "50" },
     ],
   },
   {
     nombre: "PLATILLO 1/4",
     img: birria,
     precio: "145",
-    descripcion: "TORTILLAS DE MANO Y GUARNICIONES",
+    descripcion:
+      "Birria acompañada de tortillas hechas a mano y guarniciones tradicionales.",
     menu: false,
   },
   {
-    nombre: "TAZON",
+    nombre: "PIZZA BIRRIA",
+    img: pizza,
+    precio: "189",
+    descripcion:
+      "Tortilla de harina con carne de birria, queso fundido y mucho sabor.",
+    menu: false,
+  },
+  {
+    nombre: "TAZÓN",
+    img: tazon,
+    precio: "139",
+    descripcion:
+      "Birria con todo su caldo, servida en tazón. Perfecta para los que buscan intensidad de sabor.",
+    menu: false,
+  },
+  {
+    nombre: "RAMEN",
     img: ramen,
-    precio: "145",
-    descripcion: "CARNE Y CALDO",
+    precio: "139",
+    descripcion:
+      "Ramen con caldo de birria y carne, una fusión deliciosa de sabores mexicanos y japoneses.",
     menu: false,
   },
   {
     nombre: "BIRRIA",
     img: birria,
+    descripcion:
+      "Birria de res de excelente calidad, ideal para compartir o llevar.",
     menu: [
-      { nombre: "1 KG", precio: "650" },
-      { nombre: "1 KG PARA LLEVAR", precio: "550" },
-      { nombre: "1/2 KG", precio: "325" },
-      { nombre: "1/2 KG PARA LLEVAR", precio: "275" },
+      { nombre: "1 kg", precio: "650" },
+      { nombre: "1 kg para llevar", precio: "550" },
+      { nombre: "1/2 kg", precio: "325" },
+      { nombre: "1/2 kg para llevar", precio: "275" },
     ],
   },
   {
     nombre: "BEBIDAS",
     img: refrescos,
+    descripcion:
+      "Complementa tu comida con nuestras bebidas frías y calientes.",
     menu: [
-      { nombre: "CAFE NEGRO", precio: "25" },
-      { nombre: "REFRESCOS", precio: "30" },
-      { nombre: "AGUA NATURAL CHICA", precio: "20" },
-      { nombre: "AGUA NATURAL GRANDE", precio: "30" },
-      { nombre: "AGUA FRESCA DEL DIA", precio: "30" },
-      { nombre: "CERVEZA 1/2", precio: "40" },
-      { nombre: "VASO CLAMATO", precio: "35" },
-      { nombre: "VASO LIMON Y SAL", precio: "15" },
+      { nombre: "Café negro", precio: "25" },
+      { nombre: "Refrescos", precio: "30" },
+      { nombre: "Agua natural chica", precio: "20" },
+      { nombre: "Agua natural grande", precio: "30" },
+      { nombre: "Agua fresca del día", precio: "30" },
+      { nombre: "Cerveza 1/2", precio: "35" },
+      { nombre: "Vaso clamato", precio: "35" },
+      { nombre: "Vaso limón y sal", precio: "15" },
     ],
   },
 ];
+
 export const Menu = () => {
   return menu.map((producto, index) => (
     <Box
