@@ -6,7 +6,7 @@ import { Informacion } from "./components/Informacion";
 
 function App() {
   return (
-    <>
+    <div className="capital">
       <Carousel />
       <Restaurant />
       <Box textAlign="center">
@@ -52,7 +52,7 @@ function App() {
           Aplicaciones WEB Acapulco
         </Link>
       </Box>
-    </>
+    </div>
   );
 }
 
